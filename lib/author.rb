@@ -16,10 +16,11 @@ class Author
   end
   
   def self.post_count
-    posts = []
-    ObjectSpace.each_object Author do |author|
-      posts << author.posts
-    end
-    posts.flatten.length
+    # posts = []
+    # ObjectSpace.each_object Author do |author|
+    #   posts << author.posts
+    # end
+    # posts.flatten.length
+    Post.all.count
   end
 end

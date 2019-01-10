@@ -21,6 +21,7 @@ class Artist
       songs << artist.songs
     end
     songs.flatten.length
+    # Song.all.count
   end
   
   
